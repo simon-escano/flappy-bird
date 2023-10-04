@@ -38,7 +38,7 @@ const flappy = {
         this.flyInterval = setInterval(() => {
             if (this.y <= 0) return;
             this.state = (this.state + 1) % 3;
-            this.img.background = `url("../images/${this.states[this.state]}")`;
+            this.img.background = `url("./images/${this.states[this.state]}")`;
         }, 100);
     }
 }
